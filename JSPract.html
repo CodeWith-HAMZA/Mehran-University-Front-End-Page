@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="container" class="contP">
+
+        <div id="box1" class="child">
+            this is my first child of #container.contP
+        </div>
+        <div id="box1" class="child">
+            this is my 2nd child of #container.contP
+        </div>
+        <div id="box1" class="child">
+            <div class="childsChild">
+                dada
+            </div>
+            this is my 3rd child of #container.contP
+        </div>
+
+    </div>
+
+
+</body>
+
+    <script>
+
+        
+        // let childCont = document.getElementsByClassName("child");
+        // for (let i = 0; i < childCont.length; i++) {
+        //     childCont[i].style.color =  "red";
+
+        // }
+            console.log(document.getElementsByClassName('contP')[0].children[2].children[0]);
+        
+
+    </script>
+</html>
